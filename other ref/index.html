@@ -1,0 +1,174 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pakar Deteksi Penyakit</title>
+    <style>
+        body{
+            background-color: #e3f2fd; /* Warna biru langit */
+        }
+        #cover {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1565c0; /* Warna biru gelap */
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2; /* Warna abu-abu */
+        }
+
+        tr:hover {
+            background-color: #f2f2f2; /* Warna abu-abu saat dihover */
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #1565c0; /* Warna biru gelap */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0d47a1; /* Warna biru gelap yang sedikit lebih tua */
+        }
+    </style>
+</head>
+<body>
+    <iframe src="header.html" width="100%" height="100" frameborder="0"></iframe>
+    <div id="cover">
+        <div class="container">
+            <h1>Sistem Pakar Deteksi Penyakit</h1>
+            <form action="proses.php" method="post">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Nomor</th>
+                        <th>Kode</th>
+                        <th>Gejala</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="1"></td>
+                        <td>1</td>
+                        <td>G1</td>
+                        <td>Suhu air terlalu tinggi/rendah</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="2"></td>
+                        <td>2</td>
+                        <td>G2</td>
+                        <td>Ph air di luar batas normal</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="3"></td>
+                        <td>3</td>
+                        <td>G3</td>
+                        <td>Kecerahan air buruk</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="4"></td>
+                        <td>4</td>
+                        <td>G4</td>
+                        <td>Salinitas terlalu tinggi/rendah</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="5"></td>
+                        <td>5</td>
+                        <td>G5</td>
+                        <td>Udang berenang ke permukaan</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="6"></td>
+                        <td>6</td>
+                        <td>G6</td>
+                        <td>Udang berkumpul di pematang kolam dengan luka di antena</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="7"></td>
+                        <td>7</td>
+                        <td>G7</td>
+                        <td>Hepatopankreas membesar dan berwarna putih kekuningan</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="8"></td>
+                        <td>8</td>
+                        <td>G8</td>
+                        <td>Nafsu makan menurun</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="9"></td>
+                        <td>9</td>
+                        <td>G9</td>
+                        <td>Hepatopankreas mengecil dan berwarna keputihan</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="10"></td>
+                        <td>10</td>
+                        <td>G10</td>
+                        <td>Udang berenang ke permukaan</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="11"></td>
+                        <td>11</td>
+                        <td>G11</td>
+                        <td>Udang berkumpul di pematang kolam dengan luka di antena</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="12"></td>
+                        <td>12</td>
+                        <td>G12</td>
+                        <td>Hepatopankreas membesar dan berwarna putih kekuningan</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="symptoms[]" value="13"></td>
+                        <td>13</td>
+                        <td>G13</td>
+                        <td>Kulit mengelupas bukan pada siklus molting</td>
+                    </tr>
+                </table>
+                <input type="submit" value="Proses">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
